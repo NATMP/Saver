@@ -7,7 +7,7 @@ public class CreateHierachyTemplate : MonoBehaviour
 {
     private static string[] template = { "=Manager=", "=Enemies=", "=Player=", "=UI=", "=Map=" };
 
-    [MenuItem("Assets/Create Hierachy Template",priority =1)]
+    [MenuItem("Tools/Create Hierachy Template",priority =1)]
     public static void CreateHierachyTemplateFunc()
     {
         for (int i = 0; i < template.Length; i++)
