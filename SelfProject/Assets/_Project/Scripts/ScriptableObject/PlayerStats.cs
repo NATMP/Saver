@@ -5,9 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="PlayerSO/Player")]
 public class PlayerStats : ScriptableObject
 {
-    public int Hp;
-    public int Damage;
-    public int Defense;
-    public int Mp;
-    public int Speed;
+    [Header("Normal Stats")]
+    public int MoveSpeed;
+    public float JumpForce;
+    [Header("Move Speed Reduce Stats")]
+    public int MoveSpeedReduce;
+    [Header("Jump Force Reduce Stats")]
+    public float JumpForceReduce;
 }
