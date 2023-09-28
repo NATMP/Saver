@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerInputManager : MonoBehaviour
+public class PlayerInputManager : SingletonGeneric<PlayerInputManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float direction;
+    private bool isMoving;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float Direction { get => direction; set => direction = value; }
+    public bool IsMoving { get => isMoving; set => isMoving = value; }
 }
